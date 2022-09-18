@@ -7,7 +7,15 @@
 
 <body style="background-image: url('https://cdn.discordapp.com/attachments/941912351416934440/1020776987196919838/unknown.png'); background-repeat: no-repeat; background-size: cover !important; margin:0;">
 
-<img id="pic" align=right src=https://i.postimg.cc/dt6F6vfr/d459908fbc601361e54b300c4d1c1d32-preview-rev-1-1.png width=auto height=100% style="margin-right:-200px;transition: 5s;">
+<div id="dpic1" style="">
+
+
+<img id="pic2" align=right src=https://i.postimg.cc/QxYMnFkD/unknown-preview-rev-1-24-2.png width=auto height=100% style="transition: 3s;">
+
+<img id="pic" align=right src=https://i.postimg.cc/dt6F6vfr/d459908fbc601361e54b300c4d1c1d32-preview-rev-1-1.png width=auto height=100% style="margin-right:-200px;transition: 3s;">
+</div>
+
+
 <br>
 <br>
 <br>
@@ -43,18 +51,24 @@ A friendly and welcoming aura seems to follow him around. Always ready to try an
 </center>
 
 
-<iframe width="100%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://www.youtube.com/embed/sLgX6256q0g?autoplay=1"></iframe>
+<iframe width="100%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://www.youtube.com/embed/sLgX6256q0g?autoplay=0"></iframe>
 
 
 <script>
-
+$("#dpic1").hover(function(){
+$('#pic').hide();
+  $('#pic2').fadeTo(1000, 1.0);
+  }, function(){
+  $('#pic2').hide();
+  $('#pic').fadeTo(1000, 1.0);
+});
 $(document).ready(function(){
 
 $('#pic').hide();
 $('#topF').hide();
 $('#BottomF').hide();
 $('font').hide();
-
+$('#pic2').hide();
 $('#pic').animate({"margin-right": '+=200'}, 1000);
 $('#pic').fadeTo(3000, 1.0);
 $('#topF').fadeTo(7000, 1.0);
